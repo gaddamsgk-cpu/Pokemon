@@ -1,0 +1,75 @@
+
+*{box-sizing:border-box}body{margin:0;background:#0a1020;color:#f4f7ff;font-family:Arial,Helvetica,sans-serif;min-height:100vh}.screen{display:none;min-height:100vh;padding:28px}.screen.active{display:block}.hero{max-width:1120px;margin:40px auto 24px;display:flex;gap:22px;align-items:center}.pokeball{width:76px;height:76px;border-radius:50%;display:grid;place-items:center;background:#e9435a;border:8px solid #fff;font-size:48px;box-shadow:0 0 30px #e9435a55}.eyebrow{font-size:12px;letter-spacing:3px;color:#90a4c6;font-weight:800}.hero h1{font-size:clamp(34px,6vw,70px);margin:5px 0}.hero p{color:#aebbd2;font-size:18px}.home-grid{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1fr 1.5fr;gap:22px}.trainer-card,.start-card,.card,.battle-ui,.switch-panel{background:#121a2c;border:1px solid #2a3a5b;border-radius:22px;box-shadow:0 20px 60px #0005}.trainer-card{min-height:280px;display:flex;align-items:end;justify-content:center;position:relative;overflow:hidden}.trainer-card img{height:240px;image-rendering:auto}.trainer-card div{position:absolute;left:20px;bottom:18px;display:grid}.trainer-card span{font-size:11px;color:#7f94b7;letter-spacing:2px}.trainer-card b{font-size:22px}.start-card{padding:42px;display:flex;flex-direction:column;justify-content:center}.start-card h2{font-size:46px;margin:0 0 10px}.start-card p{color:#aebbd2;font-size:18px;line-height:1.5}.primary,.secondary,.ghost{border:0;border-radius:14px;padding:14px 18px;font-weight:900;cursor:pointer;color:#fff}.primary{background:linear-gradient(135deg,#ef465b,#8f39d6);box-shadow:0 10px 30px #9f3dcd44}.secondary{background:#263653;border:1px solid #3b527a}.ghost{background:#18233a;border:1px solid #324565}.big{font-size:17px;padding:18px 24px;margin-top:15px}.top{max-width:1120px;margin:0 auto 25px;display:flex;gap:18px;align-items:center}.top h2{margin:4px 0;font-size:32px}.cards{max-width:1120px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{padding:20px;cursor:pointer;transition:.18s;min-height:190px}.card:hover{transform:translateY(-3px);border-color:#657eaf}.card img{height:105px;max-width:150px;display:block;margin:auto;object-fit:contain}.card h3{margin:8px 0 4px}.card p{margin:0;color:#9eb0cd;font-size:13px}.team-card{min-height:230px}.team-card img{height:125px}.badge{display:inline-block;font-size:10px;border-radius:999px;padding:5px 8px;background:#243657;color:#b9c8e1;margin:3px}.battle-header{max-width:1180px;margin:0 auto 10px;display:flex;justify-content:space-between;align-items:center}.trainer-mini{display:flex;gap:10px;align-items:center}.trainer-mini.right{justify-content:flex-end;text-align:right}.trainer-mini img{width:76px;height:76px;object-fit:contain}.trainer-mini b{display:block;font-size:18px}.trainer-mini small{color:#7e94b7}.vs{font-weight:1000;color:#f04c65;letter-spacing:4px}.arena{max-width:1180px;height:470px;margin:auto;position:relative;overflow:hidden;border-radius:26px;background:linear-gradient(#b9d9ed 0 42%,#d6bd8a 43% 70%,#8f744d 71% 100%);border:3px solid #34496b;box-shadow:inset 0 0 80px #0002}.arena:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 20%,#fff8,transparent 40%);pointer-events:none}.platform{position:absolute;border-radius:50%;background:#cbd0da;border:6px solid #6e7482;box-shadow:inset 0 0 30px #3335,0 10px 20px #0004}.enemy-platform{width:390px;height:120px;right:60px;top:105px}.player-platform{width:430px;height:135px;left:40px;bottom:55px}.mon{position:absolute;z-index:3}.mon img{display:block;image-rendering:auto;filter:drop-shadow(0 10px 8px #0006)}.mon.enemy{right:110px;top:70px}.mon.enemy img{width:210px;height:210px;object-fit:contain}.mon.player{left:80px;bottom:60px}.mon.player img{width:250px;height:250px;object-fit:contain}.status-box{min-width:250px;background:#eef2f4;color:#222;border:4px solid #3b4755;border-radius:10px;padding:9px 12px;box-shadow:4px 6px 0 #0003}.mon.enemy .status-box{position:absolute;right:120px;top:0}.mon.player .status-box{position:absolute;left:150px;bottom:150px}.name-line{display:flex;justify-content:space-between;gap:12px;font-weight:900}.hpbar{height:12px;background:#59616b;border-radius:8px;overflow:hidden;margin-top:7px}.hpbar i{display:block;height:100%;background:#27b83e}.hptext{font-size:12px;text-align:right;margin-top:3px}.meta{font-size:11px;color:#536171;margin-top:3px}.weather{position:absolute;z-index:4;top:10px;left:50%;transform:translateX(-50%);background:#17233a99;padding:6px 12px;border-radius:99px;font-size:11px;color:#dbe7ff}.battle-ui{max-width:1180px;margin:10px auto 0;padding:12px;display:grid;grid-template-columns:1fr 1.6fr;gap:12px;position:relative}.dialog{background:#0c1424;border:1px solid #2f4265;border-radius:14px;padding:16px;min-height:112px}.dialog-title{font-size:10px;letter-spacing:2px;color:#7e96bb;margin-bottom:8px}.dialog #message{font-size:17px;line-height:1.45}.action-panel{background:#0d1526;border:1px solid #2f4265;border-radius:14px;padding:12px}.action-head{display:flex;justify-content:space-between;color:#91a5c5;font-size:11px;font-weight:900;letter-spacing:2px;margin-bottom:9px}.moves{display:grid;grid-template-columns:1fr 1fr;gap:8px}.move{min-height:64px;border:2px solid #273650;border-radius:11px;color:#fff;text-align:left;padding:8px 10px;cursor:pointer;background:#273650}.move:hover:not(:disabled){transform:translateY(-1px);filter:brightness(1.12)}.move:disabled{opacity:.4;cursor:not-allowed}.move b{display:block;font-size:15px}.move small{display:block;margin-top:4px;opacity:.85}.type-normal{background:#777;}.type-fire{background:#e25845}.type-water{background:#3f8fe8}.type-electric{background:#c7a32b;color:#fff}.type-grass{background:#4f9c58}.type-ice{background:#55b9c8}.type-fighting{background:#a84b52}.type-poison{background:#8c4d9f}.type-ground{background:#b28b48}.type-flying{background:#688ec6}.type-psychic{background:#c54e8c}.type-bug{background:#799b3f}.type-rock{background:#8d7856}.type-ghost{background:#665b98}.type-dragon{background:#5f4eaa}.type-dark{background:#554b4c}.type-steel{background:#687b8d}.type-fairy{background:#c87caa}.subrow{display:flex;gap:8px;margin-top:10px}.subrow #switchBtn{flex:1}.specials{display:flex;gap:8px;flex:2}.specials button{flex:1}.switch-panel{position:absolute;right:12px;bottom:12px;width:calc(55% - 6px);padding:14px;z-index:20;background:#0c1424f7}.team{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.team button{background:#17243a;color:#fff;border:1px solid #30476a;border-radius:10px;padding:12px;cursor:pointer;text-align:left}.team button:disabled{opacity:.35}.hidden{display:none!important}.modal{position:fixed;inset:0;background:#050914dd;display:grid;place-items:center;z-index:50}.modal-card{width:min(480px,90vw);text-align:center;background:#121a2c;border:1px solid #3a4f76;border-radius:25px;padding:42px}.modal-card>div{font-size:64px}.modal-card h2{font-size:42px;margin:8px}.modal-card p{color:#aebbd2}.log-fx{animation:pop .28s}@keyframes pop{from{transform:scale(.96);opacity:.3}to{transform:scale(1);opacity:1}}@media(max-width:900px){.home-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.arena{height:410px}.enemy-platform{right:15px;width:300px}.player-platform{left:10px;width:330px}.mon.enemy{right:30px}.mon.player{left:20px}.battle-ui{grid-template-columns:1fr}.switch-panel{width:calc(100% - 24px)}.battle-header{padding:0 10px}}@media(max-width:600px){.screen{padding:15px}.cards{grid-template-columns:1fr 1fr}.card{padding:12px}.card img{height:90px}.arena{height:360px}.mon.enemy img{width:160px;height:160px}.mon.player img{width:190px;height:190px}.mon.enemy .status-box{right:60px}.mon.player .status-box{left:100px;bottom:100px}.status-box{min-width:190px}.moves{grid-template-columns:1fr 1fr}.team{grid-template-columns:1fr 1fr}.hero{margin-top:15px}.hero h1{font-size:35px}}
+
+/* ===== CLASSIC HANDHELD BATTLE PRESENTATION ===== */
+body{background:#c8d1d5;color:#222}
+#battle{padding:0;min-height:100vh;background:#56636a;overflow:hidden}
+#battle .battle-header{height:72px;max-width:none;margin:0;padding:6px 24px;background:#44525a;color:#fff;border-bottom:4px solid #344047}
+#battle .trainer-mini img{width:56px;height:56px;image-rendering:auto}
+#battle .trainer-mini b{font-size:17px;text-transform:uppercase}
+#battle .trainer-mini small{color:#c9d4d8}
+#battle .vs{color:#ffd84b;font-size:24px}
+#battle .arena{max-width:none;width:100%;height:54vh;min-height:430px;border-radius:0;border:0;border-bottom:5px solid #344047;box-shadow:none;background:linear-gradient(#dce9ed 0 47%,#d7b76b 48% 100%);}
+#battle .arena:after{background:linear-gradient(165deg,transparent 0 42%,#fff4 42% 43%,transparent 43% 100%)}
+#battle .platform{background:#eef0f1;border:6px solid #747e86;box-shadow:inset 0 -15px 20px #8b919555,0 10px 0 #625c4a55}
+#battle .enemy-platform{width:330px;height:92px;right:8%;top:34%}
+#battle .player-platform{width:410px;height:105px;left:5%;bottom:7%}
+#battle .mon.enemy{right:11%;top:18%}
+#battle .mon.enemy img{width:220px;height:220px}
+#battle .mon.player{left:9%;bottom:5%}
+#battle .mon.player img{width:270px;height:270px}
+#battle .status-box{min-width:300px;background:#e8edf0;border:5px solid #4a5660;border-radius:5px;padding:7px 11px;box-shadow:7px 7px 0 #4c4c4c33}
+#battle .mon.enemy .status-box{right:145px;top:0}
+#battle .mon.player .status-box{left:180px;bottom:180px}
+#battle .name-line{font-size:21px}.battle-ui{max-width:none;margin:0;border-radius:0;border:0;background:#3f4c54;padding:10px 14px;grid-template-columns:300px 1fr;gap:10px;box-shadow:none}
+#battle .dialog{min-height:120px;background:#f3f4f2;border:5px solid #4b545a;border-radius:7px;color:#3c4449;box-shadow:inset 0 0 0 2px #fff}
+#battle .dialog-title{color:#707a80;margin-bottom:6px}.dialog #message{font-size:18px;font-weight:700}
+#battle .action-panel{background:#3f4c54;border:0;padding:0}.action-head{display:none}
+#battle .moves{gap:5px;grid-template-columns:1fr 1fr}
+#battle .move{min-height:63px;border:4px solid #f0f2f2;border-radius:8px;padding:7px 11px;box-shadow:0 2px 0 #1e272c;background:#858c8f}
+#battle .move b{font-size:17px}.move small{font-size:11px}
+#battle .type-normal{background:#858781}.type-fire{background:#ef654f}.type-water{background:#4b92d7}.type-electric{background:#d6b334}.type-grass{background:#58a552}.type-ice{background:#63b8c6}.type-fighting{background:#b04b4f}.type-poison{background:#9b4da2}.type-ground{background:#b28a50}.type-flying{background:#6b8fc3}.type-psychic{background:#c3568d}.type-bug{background:#7fa040}.type-rock{background:#a88b4e}.type-ghost{background:#6b5b9c}.type-dragon{background:#6250aa}.type-dark{background:#5a4e4f}.type-steel{background:#758695}.type-fairy{background:#c981aa}
+#battle .subrow{margin-top:5px}.subrow #switchBtn{background:#39a05a;border:4px solid #eaf1e8}.specials button{border:4px solid #f2f2f2;border-radius:8px;font-weight:900}
+#battle .switch-panel{right:14px;bottom:14px;width:420px;background:#e8edf0;border:5px solid #4b545a;border-radius:8px;color:#222;box-shadow:8px 8px 0 #0003}
+#battle .switch-panel .action-head{display:flex;color:#3f4c54;margin-bottom:8px}
+#battle .team{grid-template-columns:1fr 1fr}.team button{background:#fff;color:#27323a;border:3px solid #7c878e;border-radius:5px}.team button:hover:not(:disabled){background:#dce9ed}.team button:disabled{opacity:.4}
+#battle .special-bond{background:#2e75c5}.special-gmax{background:#c8891d}.special-mega{background:#7a55b7}
+.attack-anim{animation:attackLunge .55s ease}.hit-anim{animation:hitShake .5s ease}.faint-anim{animation:faintOut .75s ease forwards}.special-anim{animation:specialPulse .8s ease}
+@keyframes attackLunge{0%,100%{transform:translateX(0)}45%{transform:translateX(45px) scale(1.03)}}
+@keyframes hitShake{0%,100%{transform:translateX(0)}20%{transform:translateX(-14px)}40%{transform:translateX(12px)}60%{transform:translateX(-10px)}80%{transform:translateX(7px)}}
+@keyframes faintOut{to{transform:translateY(60px);opacity:0}}
+@keyframes specialPulse{0%{transform:scale(.92);filter:brightness(1)}50%{transform:scale(1.12);filter:brightness(1.8)}100%{transform:scale(1);filter:brightness(1)}}
+@media(max-width:900px){#battle .arena{height:52vh;min-height:380px}#battle .enemy-platform{width:280px;right:4%}#battle .player-platform{width:340px;left:2%}#battle .mon.enemy img{width:180px;height:180px}#battle .mon.player img{width:220px;height:220px}#battle .mon.enemy .status-box{right:70px}#battle .mon.player .status-box{left:110px;bottom:135px}.battle-ui{grid-template-columns:1fr}.switch-panel{width:calc(100% - 28px)}}
+@media(max-width:600px){#battle .battle-header{height:58px;padding:3px 8px}.battle-header .trainer-mini img{width:42px;height:42px}.battle-header .trainer-mini b{font-size:12px}.battle-header .vs{font-size:17px}#battle .arena{height:50vh;min-height:330px}.battle-ui{padding:6px}.dialog{min-height:85px}.dialog #message{font-size:14px}.moves .move{min-height:56px}.move b{font-size:13px}.move small{font-size:9px}#battle .mon.enemy{right:5%;top:15%}#battle .mon.player{left:2%;bottom:2%}#battle .status-box{min-width:210px}.mon.enemy .status-box{right:55px}.mon.player .status-box{left:85px;bottom:105px}}
+
+/* FINAL READABILITY + CLASSIC TITLE FIX */
+#home .hero h1{color:#ffffff!important;text-shadow:0 3px 0 #24313a,0 0 18px #0006!important}
+#home .hero p{color:#e8eef2!important}
+#home .start-card h2{color:#ffffff!important;text-shadow:0 2px 0 #0005}
+#home .start-card p{color:#d8e2e8!important}
+#home .trainer-card span,#home .trainer-card b{color:#ffffff!important}
+#battle .specials button{cursor:pointer;min-height:48px}
+#battle .specials button:disabled{opacity:.45;cursor:not-allowed}
+#battle .move{position:relative;z-index:30;pointer-events:auto}
+#battle .action-panel{position:relative;z-index:25}
+#battle .switch-panel{z-index:50}
+/* TYPE-ACCURATE MOVE BUTTONS: explicit so classic UI never washes them to gray */
+#battle .move.type-normal{background:#858781!important}
+#battle .move.type-fire{background:#ef654f!important}
+#battle .move.type-water{background:#4b92d7!important}
+#battle .move.type-electric{background:#d6b334!important}
+#battle .move.type-grass{background:#58a552!important}
+#battle .move.type-ice{background:#63b8c6!important}
+#battle .move.type-fighting{background:#b04b4f!important}
+#battle .move.type-poison{background:#9b4da2!important}
+#battle .move.type-ground{background:#b28a50!important}
+#battle .move.type-flying{background:#6b8fc3!important}
+#battle .move.type-psychic{background:#c3568d!important}
+#battle .move.type-bug{background:#7fa040!important}
+#battle .move.type-rock{background:#a88b4e!important}
+#battle .move.type-ghost{background:#6b5b9c!important}
+#battle .move.type-dragon{background:#6250aa!important}
+#battle .move.type-dark{background:#5a4e4f!important}
+#battle .move.type-steel{background:#758695!important}
+#battle .move.type-fairy{background:#c981aa!important}
+#playerChoice .trainer-select,#opponents .trainer-select,#teamChoice .team-card{cursor:pointer}
