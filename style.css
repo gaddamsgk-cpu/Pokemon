@@ -85,16 +85,5 @@ body{background:#c8d1d5;color:#222}
 .arena.weather-snow::after{content:'';position:absolute;inset:0;pointer-events:none;z-index:20;background-image:radial-gradient(circle,rgba(255,255,255,.95) 0 2px,transparent 3px),radial-gradient(circle,rgba(220,240,255,.85) 0 1.5px,transparent 2.5px);background-size:45px 45px,70px 70px;animation:snowFall 1.4s linear infinite;mix-blend-mode:screen}
 @keyframes snowFall{from{background-position:0 -30px,20px -60px}to{background-position:35px 90px,-15px 110px}}
 
-
-/* Champion battle clarity fixes */
-#battle .trainer-mini{align-items:center}
-#battle .poke-balls{display:flex;gap:4px;margin:3px 0 1px;min-height:14px;align-items:center}
-#battle .trainer-mini.right .poke-balls{justify-content:flex-end}
-#battle .poke-ball{width:13px;height:13px;border-radius:50%;position:relative;display:inline-block;border:2px solid #18222a;background:linear-gradient(to bottom,#e84b4b 0 44%,#f3f4f2 44% 100%);box-shadow:0 0 0 1px #fff8}
-#battle .poke-ball:before{content:'';position:absolute;left:-2px;right:-2px;top:4px;height:2px;background:#18222a}
-#battle .poke-ball i{position:absolute;width:4px;height:4px;border-radius:50%;background:#fff;border:1px solid #18222a;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2}
-#battle .poke-ball.fainted{filter:grayscale(1);background:linear-gradient(to bottom,#777 0 44%,#aaa 44% 100%);opacity:.65}
-#battle .poke-ball.active{transform:translateY(-1px);box-shadow:0 0 0 1px #fff,0 0 7px #ffd84b}
-/* High contrast trainer names on dark selection cards */
-#playerChoice .card h3,#opponents .card h3,#teamChoice .card h3{color:#fff!important;text-shadow:0 1px 2px #000}
-#playerChoice .card p,#opponents .card p,#teamChoice .card p{color:#dbe6f5!important}
+/* Fairy is a first-class type: never inherit Normal styling */
+.type-fairy,.badge.type-fairy{background:#c981aa!important;color:#fff!important}
